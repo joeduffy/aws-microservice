@@ -10,9 +10,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    html = "<h3>Hello, there {name}!</h3>\n" \
-           "from <b>{hostname}</b><br/>\n" \
-    return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname()s)
+    html = "<h3>Hello, World!</h3>\n" \
+           "from <b>{hostname}</b><br/>\n"
+    return html.format(hostname=socket.gethostname())
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)

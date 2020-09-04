@@ -14,7 +14,6 @@ let service = new Microservice("my-app", {
     cluster,
     path: "./app",
     port: 80,
-    replicas: 3,
 });
 
 // Finally, export the Internet address for the service.
